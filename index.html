@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aurora Design — Landing</title>
+  <meta name="description" content="Sample landing page — Navigation, Hero, Features, Contact, Footer" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small style to support glass effect */
+    .backdrop-blur-sm { backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="antialiased bg-slate-50 text-slate-900">
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-40 bg-white/80 backdrop-blur-sm border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-6">
+          <a href="#" class="text-2xl font-bold text-teal-700">Aurora<span class="text-slate-600">Design</span></a>
+          <div class="hidden md:flex items-center gap-6">
+            <a href="#home" class="text-slate-700 hover:text-teal-700">Home</a>
+            <a href="#services" class="text-slate-700 hover:text-teal-700">Services</a>
+            <a href="#pricing" class="text-slate-700 hover:text-teal-700">Pricing</a>
+            <a href="#about" class="text-slate-700 hover:text-teal-700">About</a>
+            <a href="#contact" class="text-slate-700 hover:text-teal-700">Contact</a>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <a href="#" class="hidden md:inline text-sm font-medium text-slate-700 hover:text-teal-700">Sign In</a>
+          <a href="#contact" class="inline-flex items-center px-4 py-2 rounded-2xl bg-teal-600 text-white text-sm font-semibold hover:bg-teal-700">Get Started</a>
+
+          <!-- mobile menu button -->
+          <button data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" class="md:hidden p-2 rounded-md hover:bg-slate-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-slate-100">
+      <div class="px-4 pt-4 pb-6 space-y-3">
+        <a href="#home" class="block text-slate-700">Home</a>
+        <a href="#services" class="block text-slate-700">Services</a>
+        <a href="#pricing" class="block text-slate-700">Pricing</a>
+        <a href="#about" class="block text-slate-700">About</a>
+        <a href="#contact" class="block text-slate-700">Contact</a>
+        <a href="#" class="block mt-2 px-4 py-2 rounded-md bg-teal-600 text-white text-center">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <header id="home" class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Build beautiful products — faster.</h1>
+          <p class="mt-4 text-lg text-slate-700 max-w-xl">Design simple, consistent UI components and launch landing pages quickly with a modern design system. Clean, responsive, and production-ready.</p>
+
+          <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-3">
+            <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-teal-600 text-white font-semibold shadow hover:bg-teal-700 w-full sm:w-auto">Start Free</a>
+            <a href="#services" class="inline-flex items-center justify-center px-6 py-3 rounded-2xl border border-slate-200 text-slate-700 font-medium w-full sm:w-auto">See Demo</a>
+          </div>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-700">Fast prototyping</span>
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-700">Accessible</span>
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-700">Responsive</span>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7f7f0a4a6c28d9f9b5a8bca0f3f5f5c1" alt="Design mockups on a desk" class="rounded-2xl shadow-lg w-full max-w-md object-cover">
+        </div>
+      </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services" class="bg-white border-t border-b border-slate-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-2xl font-bold">What we build</h2>
+          <p class="mt-2 text-slate-600">A set of modern UI sections and components you can reuse across projects.</p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- card 1 -->
+          <div class="p-6 bg-slate-50 rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <div class="flex items-center gap-4">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zM21 21v-2a4 4 0 00-3-3.87M3 21v-2a4 4 0 013-3.87"></path></svg>
+              <h3 class="text-lg font-semibold">Design Systems</h3>
+            </div>
+            <p class="mt-3 text-slate-600 text-sm">Reusable components, consistent spacing, and accessible patterns to speed up development.</p>
+          </div>
+
+          <!-- card 2 -->
+          <div class="p-6 bg-slate-50 rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <div class="flex items-center gap-4">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M12 3v18"></path></svg>
+              <h3 class="text-lg font-semibold">Prototyping</h3>
+            </div>
+            <p class="mt-3 text-slate-600 text-sm">Fast iterations with production-ready HTML & Tailwind utilities that you can copy directly.</p>
+          </div>
+
+          <!-- card 3 -->
+          <div class="p-6 bg-slate-50 rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <div class="flex items-center gap-4">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2"></path></svg>
+              <h3 class="text-lg font-semibold">Performance</h3>
+            </div>
+            <p class="mt-3 text-slate-600 text-sm">Optimized assets and lightweight markup so pages load quickly everywhere.</p>
+          </div>
+
+          <!-- card 4 -->
+          <div class="p-6 bg-slate-50 rounded-2xl shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
+            <div class="flex items-center gap-4">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 1.657-1.343 3-3 3S6 12.657 6 11s1.343-3 3-3 3 1.343 3 3z"></path></svg>
+              <h3 class="text-lg font-semibold">Accessibility</h3>
+            </div>
+            <p class="mt-3 text-slate-600 text-sm">Semantic markup and ARIA-friendly patterns to be inclusive by default.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="text-2xl font-bold">Get in touch</h2>
+          <p class="mt-2 text-slate-600">Have a project or question? Send us a message and we’ll respond within 1-2 business days.</p>
+
+          <div class="mt-6 text-sm text-slate-700">
+            <p><strong>Office</strong>: 123 Design Street, Mumbai</p>
+            <p class="mt-1"><strong>Email</strong>: hello@auroradesign.example</p>
+            <p class="mt-1"><strong>Phone</strong>: +91 98765 43210</p>
+          </div>
+        </div>
+
+        <div>
+          <form id="contact-form" class="bg-white border border-slate-100 p-6 rounded-2xl shadow-sm">
+            <div class="grid grid-cols-1 gap-4">
+              <div>
+                <label for="name" class="block text-sm font-medium text-slate-700">Full name</label>
+                <input id="name" name="name" required class="mt-1 w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-200" placeholder="Your name">
+                <p class="mt-1 text-xs text-red-600 hidden" data-error-for="name">Name is required.</p>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+                <input id="email" name="email" required type="email" class="mt-1 w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-200" placeholder="you@example.com">
+                <p class="mt-1 text-xs text-red-600 hidden" data-error-for="email">Please enter a valid email.</p>
+              </div>
+
+              <div>
+                <label for="company" class="block text-sm font-medium text-slate-700">Company (optional)</label>
+                <input id="company" name="company" class="mt-1 w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-200" placeholder="Company name">
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+                <textarea id="message" name="message" rows="4" minlength="20" class="mt-1 w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-200" placeholder="Tell us about your project..."></textarea>
+                <p class="mt-1 text-xs text-red-600 hidden" data-error-for="message">Message must be at least 20 characters.</p>
+              </div>
+
+              <div class="flex items-center justify-between gap-4">
+                <button type="submit" class="px-6 py-3 rounded-2xl bg-teal-600 text-white font-semibold hover:bg-teal-700">Send message</button>
+                <p class="text-xs text-slate-500">We’ll never share your email. By contacting you agree to our privacy policy.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="font-bold text-white">Aurora Design</h4>
+            <p class="mt-2 text-slate-400 text-sm">Design systems & landing pages that ship fast.</p>
+            <div class="mt-4 flex gap-3">
+              <a href="#" aria-label="Twitter" class="hover:text-white">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 19c8.837 0 13.675-7.326 13.675-13.675 0-.208 0-.416-.014-.623A9.795 9.795 0 0024 3.557a9.58 9.58 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.865 9.865 0 01-3.127 1.195 4.916 4.916 0 00-8.38 4.482A13.953 13.953 0 011.671 2.149a4.904 4.904 0 001.523 6.554 4.897 4.897 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.949 4.89A4.935 4.935 0 01.964 13.9v.062A4.918 4.918 0 004.9 18.3a4.903 4.903 0 01-2.224.084 4.924 4.924 0 004.596 3.417A9.867 9.867 0 010 21.545a13.936 13.936 0 007.548 2.209"></path></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn" class="hover:text-white">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 5 3.76 6.2 2.26 6.2S-.46 5 .46 3.5C1.42 2 2.64.8 4.14.8s2.84 1.2 2.84 2.7zM3 8h4v12H3zM9 8h3.8v1.6h.1c.5-.9 1.8-1.9 3.7-1.9 3.9 0 4.6 2.6 4.6 6V20h-4v-5.5c0-1.3 0-3-1.9-3s-2.3 1.6-2.3 2.9V20H9z"></path></svg>
+              </a>
+              <a href="#" aria-label="GitHub" class="hover:text-white">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.75 5.5.75 11.8c0 5 3.29 9.3 7.86 10.8.58.11.79-.25.79-.56v-2c-3.19.7-3.86-1.37-3.86-1.37-.53-1.35-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.72 1.27 3.39.97.11-.75.41-1.27.74-1.56-2.55-.3-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.8 10.8 0 012.86-.39c.97 0 1.95.13 2.86.39 2.18-1.49 3.14-1.18 3.14-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.44-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16v3.2c0 .31.21.68.8.56 4.57-1.5 7.86-5.8 7.86-10.8C23.25 5.5 18.27.5 12 .5z"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="font-semibold text-white">Company</h5>
+            <ul class="mt-3 text-sm text-slate-400 space-y-2">
+              <li><a href="#" class="hover:text-white">About</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="font-semibold text-white">Subscribe</h5>
+            <p class="mt-2 text-slate-400 text-sm">Get occasional updates and design tips.</p>
+            <form class="mt-3 flex gap-2">
+              <input aria-label="Email for newsletter" type="email" placeholder="you@example.com" class="px-3 py-2 rounded-lg text-slate-900 w-full" />
+              <button class="px-4 py-2 rounded-lg bg-teal-600 text-white">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="mt-8 border-t border-slate-800 pt-6 text-sm text-slate-500 text-center">
+          &copy; <span id="year"></span> Aurora Design. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- INLINE JS -->
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile menu toggle
+    document.addEventListener('click', function(e){
+      const btn = e.target.closest('[data-menu-toggle]');
+      if (btn) {
+        const menu = document.getElementById('mobile-menu');
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        if (menu) {
+          menu.classList.toggle('hidden');
+          btn.setAttribute('aria-expanded', String(!expanded));
+        }
+      }
+    });
+
+    // contact form validation (simple)
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', function(ev){
+        ev.preventDefault();
+        let valid = true;
+
+        const name = form.querySelector('#name');
+        const email = form.querySelector('#email');
+        const message = form.querySelector('#message');
+
+        // helper: show/hide error
+        function showErr(fieldName, show) {
+          const el = form.querySelector('[data-error-for="'+fieldName+'"]');
+          if (!el) return;
+          el.classList.toggle('hidden', !show);
+        }
+
+        // name required
+        if (!name.value.trim()) { showErr('name', true); valid = false; } else showErr('name', false);
+
+        // email format
+        const eVal = email.value.trim();
+        const eOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(eVal);
+        if (!eOk) { showErr('email', true); valid = false; } else showErr('email', false);
+
+        // message length
+        if (!message.value || message.value.trim().length < 20) { showErr('message', true); valid = false; } else showErr('message', false);
+
+        if (!valid) {
+          // focus first invalid
+          form.querySelector('input[aria-invalid="true"], input:not([aria-invalid])')?.focus();
+          return;
+        }
+
+        // simulate success
+        form.innerHTML = '<div class="p-6 text-center"><h3 class="text-xl font-semibold">Thanks!</h3><p class="mt-2 text-slate-600">We received your message — we’ll be in touch soon.</p></div>';
+      });
+    }
+  </script>
+
+</body>
+</html>
