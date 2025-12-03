@@ -1,0 +1,241 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------- NAVBAR -------- */
+nav {
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+}
+
+nav .logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #2b2b2b;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/* -------- HERO SECTION -------- */
+.hero {
+  width: 100%;
+  padding: 80px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: #f8faff;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #555;
+  font-size: 18px;
+}
+
+.hero-text button {
+  padding: 12px 28px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background: #005fcc;
+}
+
+.hero-img {
+  width: 50%;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* -------- SERVICES -------- */
+.services {
+  padding: 70px 50px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.service-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  width: 300px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+}
+
+/* -------- CONTACT FORM -------- */
+.contact {
+  padding: 70px 50px;
+  background: #f7f7f7;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+form textarea {
+  height: 120px;
+}
+
+form button {
+  padding: 14px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #0062d1;
+}
+
+/* -------- FOOTER -------- */
+footer {
+  background: #1a1a1a;
+  color: white;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .brand {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+footer .links a {
+  color: #dcdcdc;
+  margin-right: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer .links a:hover {
+  color: #ffffff;
+}
+
+/* -------- RESPONSIVE -------- */
+@media(max-width: 768px) {
+
+  nav {
+    padding: 18px 20px;
+  }
+
+  nav ul {
+    display: none; /* simple mobile behavior */
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text,
+  .hero-img {
+    width: 100%;
+  }
+
+  .service-box {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
