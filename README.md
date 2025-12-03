@@ -13,3 +13,6 @@ https://nupur541.github.io/prompt-engineering-landing/
 
 ### 🔗 GitHub Repository
 https://github.com/Nupur541/prompt-engineering-landing
+
+### 🚀 Live Site (Vercel)
+https://prompt-engineering-landing.vercel.app
